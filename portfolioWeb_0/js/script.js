@@ -47,9 +47,18 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 /*------typed js---------*/
 
 const typed = new Typed('.multiplex-text',{
-    strings: ['Full Stack Developer', 'Java Developer','Python Developer'],
+    strings: ['Back End Developer', 'Java Developer','Python Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+      // Muestra la alerta de éxito
+      alert('¡El formulario se envió con éxito!');
+    });
+  });
